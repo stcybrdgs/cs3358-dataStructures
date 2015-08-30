@@ -11,6 +11,6 @@ DESCRIPTION OF ASSIGNMENTS:
 - asg05: part02 implements a function to interleave and sort data from two linked lists into one
 - asg06: part01 implements a sort/merge function using recursion
 - asg06: part02 implements three recursive functions for operating on polynomials
-- asg07:
+- asg07: implements a queue using a heap as the underlying data structure
 
 These descriptions are high-level only. More details are provided in the README.md file within each assignment folder. 
