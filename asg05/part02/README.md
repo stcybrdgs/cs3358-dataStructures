@@ -3,7 +3,7 @@ ASG05/ PART02
 OBJECTIVE: 
 The purpose of this assignment was to implement a queue using two stacks. The queue is based on a custom class, and the stacks are provided from the STL stack template. 
 
-The key to the implementation was performing breadth-wise traversals on a 'linked list of linked lists.' After moving a level of head pointers through the queue, the next level of pointers would be run through the queue, and so on, until all data was processed.
+The key to the implementation was performing breadth-wise traversals on a 'linked list of linked lists.' After moving the first level of head pointers through the queue, the next level of pointers would be run through the queue, and so on, until all data was processed.
 
 DESCRIPTION:
 - the instructor provided all files with the exception of 'cnPtrQueue.cpp'
