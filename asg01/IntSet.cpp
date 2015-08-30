@@ -74,7 +74,7 @@ bool IntSet::contains(int anInt) const
         }
     }
     
-	return false;  
+    return false;  
 }
 
 bool IntSet::isSubsetOf(const IntSet& otherIntSet) const
@@ -121,7 +121,7 @@ IntSet IntSet::unionWith(const IntSet& otherIntSet) const
     
     IntSet tempArray;
     int tempIndex = 0;
-	bool tempFlag = false;
+    bool tempFlag = false;
 
     // copy this IntSet into tempArray
     for( int i = 0; i < this->size(); i ++ )
