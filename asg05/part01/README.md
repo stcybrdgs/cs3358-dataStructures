@@ -1,4 +1,4 @@
-ASG05/ PART01
+#PART01
 
 OBJECTIVE: 
 The purpose of this assignment was to develop a function capable of combining the contents of two separate linked lists into a single linked list with the following properties:
