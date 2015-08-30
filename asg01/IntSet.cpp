@@ -85,7 +85,7 @@ bool IntSet::isSubsetOf(const IntSet& otherIntSet) const
         return true;
 	else if( this->size() > otherIntSet.size() )
 	{
-		return false;
+	    return false;
 	}
 	else
     {
@@ -107,12 +107,12 @@ bool IntSet::isSubsetOf(const IntSet& otherIntSet) const
 
 void IntSet::DumpData(ostream& out) const
 {  // already implemented ... DON'T change anything
-   if (used > 0)
-   {
-      out << data[0];
-      for (int i = 1; i < used; ++i)
-         out << "  " << data[i];
-   }
+    if (used > 0)
+    {
+        out << data[0];
+        for (int i = 1; i < used; ++i)
+            out << "  " << data[i];
+    }
 }
 
 IntSet IntSet::unionWith(const IntSet& otherIntSet) const
@@ -123,91 +123,91 @@ IntSet IntSet::unionWith(const IntSet& otherIntSet) const
     int tempIndex = 0;
 	bool tempFlag = false;
 
-	// copy this IntSet into tempArray
+    // copy this IntSet into tempArray
     for( int i = 0; i < this->size(); i ++ )
     {
         tempArray.data[tempIndex] = this->data[i];
-		tempArray.used ++;
+	tempArray.used ++;
         tempIndex ++;
     }
     
-	// add contents of otherIntSet to tempArray, ignoring dupes
+    // add contents of otherIntSet to tempArray, ignoring dupes
     for( int i2 = 0; i2 < otherIntSet.size(); i2 ++ )
     {
-		for( int i = 0; i < this->size(); i ++ )
-		{
-			if( otherIntSet.data[i2] == this->data[i] )
-			{
-				tempFlag = true;	// flag data matches (we don't want dupes)
-			}
-		}
+        for( int i = 0; i < this->size(); i ++ )
+	{
+	    if( otherIntSet.data[i2] == this->data[i] )
+	    {
+	        tempFlag = true;	// flag data matches (we don't want dupes)
+	    }
+	}
 
         if( !tempFlag )				
         {	
-			tempArray.data[tempIndex] =	otherIntSet.data[i2];	// save the unique data
-			tempArray.used ++;		// increment used
-			tempIndex ++;			// increment index
-		}   
+	    tempArray.data[tempIndex] =	otherIntSet.data[i2]; // save the unique data
+	    tempArray.used ++; // increment used
+            tempIndex ++; // increment index
+	}   
 		
-		tempFlag = false;			// reset tempFlag for next iteration
+	tempFlag = false; // reset tempFlag for next iteration
     }    
           
-   return tempArray;   
+    return tempArray;   
 }
 
 IntSet IntSet::intersect(const IntSet& otherIntSet) const
 {
-    IntSet tempArray;		// create a temp IntSet object 
-							// to hold the intersection values
+    IntSet tempArray;	 // create a temp IntSet object 
+			 // to hold the intersection values
     int tempIndex = 0;
-	int strikeCount = 0;	// var to count # times that
-							// a value in IntSet does not
-							// match a value in otherIntSet
-	bool removeSuccess;		// flag handle to call remove()
+    int strikeCount = 0; // var to count # times that
+			 // a value in IntSet does not
+			 // match a value in otherIntSet
+    bool removeSuccess;  // flag handle to call remove()
 
-	// copy this IntSet into tempArray
+    // copy this IntSet into tempArray
     for( int i = 0; i < this->size(); i ++ )
     {
-		tempArray.data[tempIndex] = this->data[i];
-		tempArray.used ++;
+        tempArray.data[tempIndex] = this->data[i];
+	tempArray.used ++;
         tempIndex ++;
     }
     
-	// remove the contents of tempArray if they're not contained
-	// in the intersection of thisIntSet and otherIntSet
+    // remove the contents of tempArray if they're not contained
+    // in the intersection of thisIntSet and otherIntSet
     for( int i = 0; i < this->size(); i ++ )
     {
-		for( int i2 = 0; i2 < otherIntSet.size(); i2 ++ )
-		{
-			if( this->data[i] != otherIntSet.data[i2] )
-				strikeCount ++;
-		}
+	for( int i2 = 0; i2 < otherIntSet.size(); i2 ++ )
+	{
+	    if( this->data[i] != otherIntSet.data[i2] )
+	        strikeCount ++;
+	}
 
-		if( strikeCount == otherIntSet.size() )
-		{
-			// strikeCount == otherIntSet.size(), then the
-			// IntSet value was not found in otherIntSet, so
-			// it's not part of the intersection and should be
-			// removed. . . 
-			removeSuccess = ( tempArray.remove(this->data[i]) );	// remove the value
-		}
+	if( strikeCount == otherIntSet.size() )
+	{
+	    // strikeCount == otherIntSet.size(), then the
+	    // IntSet value was not found in otherIntSet, so
+	    // it's not part of the intersection and should be
+	    // removed. . . 
+	    removeSuccess = ( tempArray.remove(this->data[i]) ); // remove the value
+	}
 
-		if( removeSuccess )		// here, i'm just using var f in a statement
-								// in order to get rid of a compiler warning; 
-			strikeCount = 0;	// reset the strike count for the next iteration
-		else
-			strikeCount = 0;
-    }    
+	if( removeSuccess )  // here, i'm just using var f in a statement
+	                     // in order to get rid of a compiler warning; 
+	    strikeCount = 0; // reset the strike count for the next iteration
+	else
+	    strikeCount = 0;
+        }    
           
-   return tempArray;		// return intersection values
+    return tempArray; // return intersection values
 }
 
 IntSet IntSet::subtract(const IntSet& otherIntSet) const
 {
-	// create temporary array object to hold values unique to this intSet
+    // create temporary array object to hold values unique to this intSet
     IntSet tempArray;		
     int tempIndex = 0;
-    bool tempFlag = false;			// the tempFlag marks dupes
+    bool tempFlag = false; // the tempFlag marks dupes
 
     for( int i = 0; i < this->size(); i ++ )
     {
@@ -215,27 +215,26 @@ IntSet IntSet::subtract(const IntSet& otherIntSet) const
         {
             if( this->data[i] == otherIntSet.data[i2] )
             {
-				tempFlag = true;	// if flag data matches, then true 
-        	}
-		}
+	        tempFlag = true; // if flag data matches, then true 
+            }
+	}
         
-        if( !tempFlag )				// if tempFlag == false, then there's no dupes, so
+        if( !tempFlag ) // if tempFlag == false, then there's no dupes, so
         {	
-			tempArray.data[tempIndex] =	this->data[i];	// save the unique data 
-			
-			tempArray.used ++;		// increment the used variable
-			tempIndex ++;			// increment the element index
-		}   
+	    tempArray.data[tempIndex] =	this->data[i]; // save the unique data 
+	    tempArray.used ++; // increment the used variable
+	    tempIndex ++; // increment the element index
+	}   
 		
-		tempFlag = false;			// reset the tempFlag for next iteration
+        tempFlag = false; // reset the tempFlag for next iteration
     }    
     
-   return tempArray;				// return the IntSet obj
+    return tempArray; // return the IntSet obj
 }
 
 void IntSet::reset()
 {
-    used = 0;						// set the # relevant elements to 0
+    used = 0; // set the # relevant elements to 0
 }
 
 bool IntSet::add(int anInt)
@@ -244,9 +243,9 @@ bool IntSet::add(int anInt)
     
     if ( !contains(anInt) )
     {
-        data[used] = anInt;		// if anInt doesn't exist in the intSet,
-        used ++;				// then add it to the end of the intSet
-        return true;			// and return true.
+        data[used] = anInt; // if anInt doesn't exist in the intSet,
+        used ++;            // then add it to the end of the intSet
+        return true;        // and return true.
     }
     else
         return false;
@@ -277,19 +276,18 @@ bool IntSet::remove(int anInt)
             }
         }
     }
-											// if intSet does not contain anInt,
-	return false;							// return false 
+			
+    return false; // if intSet does not contain anInt, return false 
 }
 
 bool equal(const IntSet& is1, const IntSet& is2)
 {
-	if(		is1.size() == is2.size() &&		// check if sets are same length
-			
-			is1.isSubsetOf(is2) &&			// check if sets are subsets of each other
-			is2.isSubsetOf(is1) )
-		return true;						// if both conditions hold, return true
-	else
-		return false;						// else return false
+    if(	is1.size() == is2.size() && // check if sets are same length
+        is1.isSubsetOf(is2) &&	    // check if sets are subsets of each other
+	is2.isSubsetOf(is1) )
+	return true;                // if both conditions hold, return true
+    else
+        return false;		    // else return false
 }
 
 
