@@ -1,13 +1,11 @@
 ASG06 / PART01
 
 OBJECTIVE: 
-The purpose of this assignment was to develop a function capable of combining the contents of two separate linked lists into a single linked list with the following properties:
-- the final data set is sorted in monotonically increasing order
-- the final data set alternates odd and even values until alternating is no longer possible
-- duplicate values are juxtaposed to maintain the property of monotonically increasing order
+The purpose of this assignment was to develop a sort/merge function capable of operating on linked lists using recursion. 
 
 DESCRIPTION:
-The instructor provided all files
-My challenge was to develop the void function 'InterleaveOddsAndEvensInOrigOrder(Node*)' in the file 'llcplmp.cpp'
-The 'Makefile' produces an executable that runs an automated test and produces the results file 'a5p1test.out'
+- The instructor provided all files
+- My challenge was to develop the void function 'SortedMergeRecur(Node*& xHead, Node*& yHead, Node*& zHead)' in the file 'llcplmp.cpp'.
+- The 'Makefile' produces an executable called 'a6p1' that runs an automated test and produces 'a6p1test.out'
+
 The details around pre-conditions, post-conditions, and invariants are captured by the documentation that is included in each of the program files.
