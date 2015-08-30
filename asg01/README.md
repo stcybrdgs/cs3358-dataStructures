@@ -1,7 +1,7 @@
 ASG01
 
 OBJECTIVE: 
-The purpose of this assignment was to implement a class to hold and operate on a set of integers. 
+The purpose of this assignment was to implement a class containing data and methods for a set of integers in a static array.
 
 DESCRIPTION:
 - 'Assign01.cpp' and 'IntSet.h' were provided by the instructor
