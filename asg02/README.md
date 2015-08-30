@@ -1,4 +1,4 @@
-ASG02
+#ASG02
 
 OBJECTIVE: 
 The purpose of this assignment was to implement a class containing data and methods for a set of integers in a dynamic array. This assignment is essentially the same as asg01, but it's key data structure is a DYNAMIC ARRAY rather than a STATIC ARRAY.
