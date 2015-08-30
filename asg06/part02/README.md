@@ -1,4 +1,4 @@
-ASG06 / PART02
+#PART02
 
 OBJECTIVE: The purpose of this assignment was to implement three recursive functions for operating on polynomials.
 
