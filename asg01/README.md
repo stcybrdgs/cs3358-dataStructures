@@ -10,6 +10,6 @@ The purpose of this assignment was to implement a class to hold and operate on a
 - create an intersection of two objects
 - modify the set by inserting, resetting, or removing integers
 
-The instructor provided the driver and the header. 
+The instructor provided the driver (Assign01.cpp) and the header (IntSet.h) files. 
 
 My challenge was to build out the implementation file (IntSet.cpp).
