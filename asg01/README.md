@@ -1,8 +1,6 @@
 ASG01
 
-The purpose of this assignment was to implement a class to hold and operate on a set of integers.
-
-The data container is a static array. The methods allow for the following data manipulation:
+The purpose of this assignment was to implement a class to hold and operate on a set of integers, where the data container is a static array, and the methods allow for the following data manipulation:
 - compare two class objects
 - subtract one object from another
 - print the contents of the set of integers
