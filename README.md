@@ -1,3 +1,5 @@
+DATA STRUCTURES PROGRAMS
+
 This repo contains C++ assignments from a Data Structures class taught at Texas State University in San Marcos, Texas.
 
 DESCRIPTION OF ASSIGNMENTS:
