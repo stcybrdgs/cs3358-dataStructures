@@ -250,13 +250,13 @@ void SortedMergeRecur(Node*& xHead, Node*& yHead, Node*& zHead)
 
     if( xHead !=0 )
 	{ 
-		InsertSortedUp(zHead, xHead->data);
-		assert ( DelFirstTargetNode( xHead, xHead->data) );
+	    InsertSortedUp(zHead, xHead->data);
+	    assert ( DelFirstTargetNode( xHead, xHead->data) );
 	}
 
 	if( yHead !=0 )
 	{ 
-		InsertSortedUp(zHead, yHead->data);
+	    InsertSortedUp(zHead, yHead->data);
 	    assert ( DelFirstTargetNode( yHead, yHead->data) );
 	}
         
