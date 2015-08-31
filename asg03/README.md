@@ -5,7 +5,7 @@ The purpose of this assignment was to implement a class containing data and meth
 
 DESCRIPTION: 
 - The instructor provided 'Assign03.cpp' and 'Sequence.h'
-- My challenge was to develop 'Sequence.cpp' 
+- My challenge was to develop ['Sequence.cpp'](Sequence.cpp) 
 - 'Assign03.cpp' provides for an interactive test of the program (compile with 'Makefile')
 - 'Assign03Auto.cpp' provides for a non-interactive test based on use cases (compile with 'MakefileAuto')
 
