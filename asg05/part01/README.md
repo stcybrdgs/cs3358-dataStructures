@@ -8,7 +8,7 @@ The purpose of this assignment was to develop a function capable of combining th
 
 DESCRIPTION:
 - The instructor provided all files
-- My challenge was to develop the void function 'InterleaveOddsAndEvensInOrigOrder(Node*)' in the file ['llcplmp.cpp'](llcplmp.cpp)
+- My challenge was to develop the void function 'InterleaveOddsAndEvensInOrigOrder(Node*)' in the file ['llcpImp.cpp'](llcpImp.cpp)
 - The 'Makefile' produces an executable that runs an automated test and generates 'a5p1test.out'
 
 The details around pre-conditions, post-conditions, and invariants are captured by the documentation that is included in each of the program files.
