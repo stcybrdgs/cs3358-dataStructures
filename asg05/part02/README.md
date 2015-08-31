@@ -7,7 +7,7 @@ The key to the implementation was performing breadth-wise traversals on a 'linke
 
 DESCRIPTION:
 - the instructor provided all files with the exception of 'cnPtrQueue.cpp'
-- my challenge was to develop the ['cnPtrQueue.cpp'](cnPtrQueue.cpp) implementation
+- **my challenge was to develop the ['cnPtrQueue.cpp'](cnPtrQueue.cpp) implementation**
 - 'a5p2_test.in' was used to test my implementation using canned inputs
 - 'a5p2_test.out' contains the output produced by running the program with 'a5p2_test.in'
 
