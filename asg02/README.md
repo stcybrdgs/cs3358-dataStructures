@@ -5,7 +5,7 @@ The purpose of this assignment was to implement a class containing data and meth
 
 DESCRIPTION: 
 - The instructor provided 'Assign02.cpp' and 'IntSet.h'
-- My challenge was to develop ['IntSet.cpp'](IntSet.cpp)
+- **My challenge was to develop ['IntSet.cpp'](IntSet.cpp)**
 - 'a2testSCB.in' was used to expedite testing
 - 'a2testSCB.out' contains the program output resulting from 'a2testSCB.out' 
 
